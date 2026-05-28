@@ -1,4 +1,5 @@
 from db import get_connection
+from models import Pedido
 
 def buscar_pedidos():
     conn = get_connection()
@@ -18,7 +19,7 @@ def buscar_pedidos():
         ORDER BY horas_parado DESC
     """)
 
-    pedidos = cursor.fetchall()
+    pedidos = [Pedido(*linha) for linha in cursor.fetchall()]
     cursor.close()
     conn.close()
     return pedidos

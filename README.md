@@ -10,7 +10,7 @@ classificados por severidade (1-5).
 
 ## 🎯 Problema que resolve
 
-Em fluxos comerciais com alto volume de pedidos (PF, PME, Super Simples),
+Em fluxos comerciais com alto volume de pedidos (PF, PJ),
 incidentes como pedidos travados na integração, pendências vencidas e
 inconsistências de status passam despercebidos até virarem reclamação.
 

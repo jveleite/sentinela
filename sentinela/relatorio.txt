@@ -1,0 +1,42 @@
+============================================================
+        SENTINELA — RELATÓRIO DE INCIDENTES
+        Gerado em: 29/05/2026 09:21
+============================================================
+  Pedidos analisados  : 8
+  Incidentes detectados: 7
+============================================================
+
+  [ SEVERIDADE 4 ]
+  --------------------------------------------------------
+  Pedido  : SS-0002 (SUPERSIMPLES)
+  Tipo    : TRAVADO_INTEGRACAO
+  Detalhe : Parado há 38.0h na integração (limite: 6h)
+
+  Pedido  : PME-001 (PME)
+  Tipo    : TRAVADO_INTEGRACAO
+  Detalhe : Parado há 30.0h na integração (limite: 6h)
+
+  Pedido  : PF-0002 (PF)
+  Tipo    : TRAVADO_INTEGRACAO
+  Detalhe : Parado há 28.0h na integração (limite: 6h)
+
+
+  [ SEVERIDADE 3 ]
+  --------------------------------------------------------
+  Pedido  : SS-0002 (SUPERSIMPLES)
+  Tipo    : PENDENCIA_VENCIDA
+  Detalhe : 1 pendência(s) aberta(s) há 38.0h
+
+  Pedido  : PME-001 (PME)
+  Tipo    : PENDENCIA_VENCIDA
+  Detalhe : 2 pendência(s) aberta(s) há 30.0h
+
+  Pedido  : PF-0002 (PF)
+  Tipo    : PENDENCIA_VENCIDA
+  Detalhe : 1 pendência(s) aberta(s) há 28.0h
+
+  Pedido  : PME-002 (PME)
+  Tipo    : PENDENCIA_VENCIDA
+  Detalhe : 1 pendência(s) aberta(s) há 20.0h
+
+============================================================

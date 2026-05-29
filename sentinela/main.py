@@ -1,6 +1,7 @@
 from repository import buscar_pedidos
 from motor import avaliar_pedidos
 from relatorio import imprimir_relatorio, salvar_relatorio
+from ia import enriquecer_incidentes
 from logger import logger
 
 
@@ -17,6 +18,18 @@ def main():
 
     imprimir_relatorio(pedidos, incidentes)
     salvar_relatorio(pedidos, incidentes)
+
+    if incidentes:
+        logger.info("Enriquecendo incidentes com IA...")
+        mais_grave = sorted(incidentes, key=lambda i: i.severidade, reverse=True)[0]
+        enriched = enriquecer_incidentes([mais_grave])
+        print("\n" + "=" * 60)
+        print("        SENTINELA — ANÁLISE DE IA")
+        print("=" * 60)
+        for incidente, analise in enriched:
+            print(f"\nIncidente: {incidente}")
+            print("-" * 60)
+            print(analise)
 
     logger.info("Sentinela finalizado.")
 
